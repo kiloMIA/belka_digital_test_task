@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, status, Depends
 
 from utils import get_current_active_user
-from models import Report
+from models.entity_models import Report
 from postgre import conn
 
 

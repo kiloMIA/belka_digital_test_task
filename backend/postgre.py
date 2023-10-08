@@ -1,6 +1,6 @@
 import psycopg2
 from os import getenv
-from models import UserInDB
+from models.entity_models import UserInDB
 
 
 conn = psycopg2.connect(

@@ -7,7 +7,8 @@ from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 
-from models import  TokenData, User
+from models.entity_models import User
+from models.auth_models import TokenData
 from postgre import get_user
 
 

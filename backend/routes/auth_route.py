@@ -1,11 +1,11 @@
 from datetime import timedelta
 from typing import Annotated
 
-from fastapi import APIRouter, HTTPException, status, OAuth2PasswordRequestForm, Depends
-from utils import create_access_token
+from fastapi import APIRouter, HTTPException, status, Depends
+from fastapi.security import OAuth2PasswordRequestForm
 
-from models import Token
-from utils import authenticate_user, ACCESS_TOKEN_EXPIRE_MINUTES
+from models.auth_models import Token
+from utils import create_access_token,authenticate_user, ACCESS_TOKEN_EXPIRE_MINUTES
 
 router = APIRouter()
 
